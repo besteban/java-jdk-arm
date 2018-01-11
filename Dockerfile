@@ -30,7 +30,7 @@ RUN apt-get -y update \
        $JAVA_HOME/jre/bin/servertool \
        $JAVA_HOME/jre/bin/tnameserv \
        $JAVA_HOME/jre/bin/unpack200 \
-       $JAVA_HOME/man \
+       $JAVA_HOME/man && \
   rm /opt/jdk/src.zip && \
  # apt-get -y remove curl openssl ca-certificates && \
   apt-get -y autoremove && apt-get clean
